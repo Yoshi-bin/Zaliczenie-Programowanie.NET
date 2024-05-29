@@ -1,0 +1,67 @@
+﻿<Window x:Class="CalculatorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kalkulator" Height="400" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <TextBlock Name="HistoryTextBlock" FontSize="16" HorizontalAlignment="Right" Margin="5"/>
+            <TextBlock Name="ResultTextBlock" FontSize="24" HorizontalAlignment="Right" Margin="5"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Content="7" Click="OnButtonClick"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="8" Click="OnButtonClick"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="9" Click="OnButtonClick"/>
+            <Button Grid.Row="0" Grid.Column="3" Content="/" Click="OnButtonClick"/>
+            <Button Grid.Row="0" Grid.Column="4" Content="sqrt" Click="OnButtonClick"/>
+
+            <Button Grid.Row="1" Grid.Column="0" Content="4" Click="OnButtonClick"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="5" Click="OnButtonClick"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="6" Click="OnButtonClick"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="*" Click="OnButtonClick"/>
+            <Button Grid.Row="1" Grid.Column="4" Content="x^y" Click="OnButtonClick"/>
+
+            <Button Grid.Row="2" Grid.Column="0" Content="1" Click="OnButtonClick"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="2" Click="OnButtonClick"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="3" Click="OnButtonClick"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="-" Click="OnButtonClick"/>
+            <Button Grid.Row="2" Grid.Column="4" Content="1/x" Click="OnButtonClick"/>
+
+            <Button Grid.Row="3" Grid.Column="0" Content="0" Click="OnButtonClick"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="." Click="OnButtonClick"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="=" Click="OnButtonClick"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="+" Click="OnButtonClick"/>
+            <Button Grid.Row="3" Grid.Column="4" Content="%" Click="OnButtonClick"/>
+
+            <Button Grid.Row="4" Grid.Column="0" Content="mod" Click="OnButtonClick"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="log" Click="OnButtonClick"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="ln" Click="OnButtonClick"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="!" Click="OnButtonClick"/>
+            <Button Grid.Row="4" Grid.Column="4" Content="ceil" Click="OnButtonClick"/>
+            <Button Grid.Row="4" Grid.Column="5" Content="floor" Click="OnButtonClick"/>
+
+            <Button Grid.Row="5" Grid.Column="0" Content="C" Click="OnButtonClick" Grid.ColumnSpan="5"/>
+        </Grid>
+    </Grid>
+</Window>

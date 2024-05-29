@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Categories>
+	<Category Name="Pojazdy osobowe" Description="Kategoria pojazdów osobowych">
+		<Subcategory Name="Nissan" Description="Japoński producent samochodów, założony w 1933 roku." Country="Japonia" FoundingYear="1933">
+			<Vehicle Name="Altima" Year="2022" EngineCapacity="2.5" DriveType="AWD" />
+			<Vehicle Name="Maxima" Year="2021" EngineCapacity="3.5" DriveType="FWD" />
+		</Subcategory>
+		<Subcategory Name="Mercedes-Benz" Description="Niemiecki producent samochodów luksusowych, założony w 1926 roku." Country="Niemcy" FoundingYear="1926">
+			<Vehicle Name="C-Class" Year="2023" EngineCapacity="2.0" DriveType="RWD" />
+			<Vehicle Name="GLE" Year="2022" EngineCapacity="3.0" DriveType="AWD" />
+		</Subcategory>
+	</Category>
+	<Category Name="Motocykle sportowe" Description="Kategoria motocykli sportowych">
+		<Subcategory Name="Yamaha" Description="Japoński producent motocykli, założony w 1955 roku." Country="Japonia" FoundingYear="1955">
+			<Vehicle Name="MT-07" Year="2022" EngineCapacity="689" DriveType="Chain" />
+			<Vehicle Name="YZF-R1" Year="2021" EngineCapacity="998" DriveType="Chain" />
+		</Subcategory>
+	</Category>
+</Categories>
